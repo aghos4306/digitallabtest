@@ -1,0 +1,40 @@
+.home-image {
+  max-width: 500px;
+  width: 100%;
+}
+.home-image img {
+  width: 100%;
+  transform: rotate(-30deg);
+}
+
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+.home-text,
+.home-image {
+}
+
+.home-text {
+  margin-top: -120px;
+}
+.home-text h1 {
+  font-weight: bolder;
+}
+.home-text p {
+  font-size: 1.3rem;
+}
+.home-text button {
+  border: none;
+  padding: 8px 16px;
+  background-color: rgb(96, 138, 96);
+  color: black;
+  cursor: pointer;
+}
+
+.home-image {
+  background-color: rgb(252, 247, 247);
+}
