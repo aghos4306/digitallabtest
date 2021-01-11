@@ -42,13 +42,13 @@ function Navbar() {
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                 </div>
+                <div className="move-nav">
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-
                     <li className="nav-item" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
                         <Link to="/recipe" className="nav-links" onClick={closeMobileMenu}>
                             Recipe <i className="fas fa-caret-down" />
                         </Link>
-                        {dropdown && <Dropdown />}
+                        {/* {dropdown && <Dropdown />} */}
                     </li>
 
                     <li className="nav-item" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
@@ -79,6 +79,7 @@ function Navbar() {
                         </Link>
                     </li> */}
                 </ul>
+                </div>
                 <Button />
             </nav>
         </>

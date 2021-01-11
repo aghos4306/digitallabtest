@@ -1,4 +1,7 @@
+/*home customization*/
+
 .home-image {
+  background-color: rgb(252, 247, 247);
   max-width: 500px;
   width: 100%;
 }
@@ -14,12 +17,10 @@
   align-items: center;
   margin-top: 120px;
 }
-.home-text,
-.home-image {
-}
 
 .home-text {
   margin-top: -120px;
+  transform: translateX(50px);
 }
 .home-text h1 {
   font-weight: bolder;
@@ -35,6 +36,41 @@
   cursor: pointer;
 }
 
-.home-image {
-  background-color: rgb(252, 247, 247);
+/*leaf customization*/
+.leaf-image {
+  max-width: 150px;
+  width: 100%;
+  margin-left: 150px;
+}
+.leaf-image img {
+  width: 100%;
+}
+.leaf-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.leaf-text {
+  margin-right: 200px;
+}
+
+.left-text-p {
+  font-size: 8px;
+}
+
+.leaf-text button {
+  border: none;
+  padding: 8px 16px;
+  background-color: rgb(96, 138, 96);
+  color: black;
+  cursor: pointer;
+  outline: none;
+}
+.leaf-text button:hover,
+.home-text button:hover {
+  transition: all 0.3s ease-in;
+  background-color: rgb(67, 117, 67);
 }
