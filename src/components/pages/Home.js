@@ -3,6 +3,7 @@ import './Home.css';
 
 import homeImg from '../../assets/images/image2.png';
 import leafImg from '../../assets/images/leafimg.jpg';
+import ImageSlider from '../carousel/ImageSlider';
 
 export default function Home() {
     return (
@@ -34,6 +35,9 @@ export default function Home() {
                     <button type="button" className="btn-leaf">Shop Now</button>
                 </div>
             </div>
+
+            {/* carousel */}
+            <ImageSlider />
         </>
     )
 }
