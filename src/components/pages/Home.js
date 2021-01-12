@@ -4,6 +4,7 @@ import './Home.css';
 import homeImg from '../../assets/images/image2.png';
 import leafImg from '../../assets/images/leafimg.jpg';
 import ImageSlider from '../carousel/ImageSlider';
+import SliderData from '../carousel/SliderData';
 
 export default function Home() {
     return (
@@ -37,7 +38,7 @@ export default function Home() {
             </div>
 
             {/* carousel */}
-            <ImageSlider />
+            <ImageSlider slides={SliderData}/>
         </>
     )
 }

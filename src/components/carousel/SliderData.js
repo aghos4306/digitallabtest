@@ -1,8 +1,8 @@
 import React from 'react';
 
-import vegetables from './10.jpg';
-import eggs from './11.jpg';
-import crab from './12.jpg';
+import vegetables from './img/10.jpg';
+import eggs from './img/11.jpg';
+import crab from './img/12.jpg';
 
 export const SliderData = [
     {

@@ -1,0 +1,51 @@
+.slider {
+  position: relative;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 200px;
+}
+
+.slider {
+  margin-bottom: 100px;
+}
+
+.image {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  margin-top: 200px;
+  /* padding: 20px; */
+}
+
+.latest-recipe {
+  position: absolute;
+  margin-bottom: 40px;
+  margin-right: 500px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 40%;
+  right: 32px;
+  font-size: 1.6rem;
+  color: #000;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 40%;
+  right: 120px;
+  transform: translateX(120%);
+  font-size: 1.6rem;
+  color: #000;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+}
