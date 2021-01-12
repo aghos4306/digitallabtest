@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Button } from './Button';
 import './Navbar.css';
 import Dropdown from './Dropdown';
+import logo from '../assets/images/logo.svg';
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -37,7 +38,7 @@ function Navbar() {
         <>
             <nav className="navbar">
                 <Link to="/" className="navbar-logo">
-                    DigitalLab
+                    <img src={logo} alt="logo" />
                 </Link>
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

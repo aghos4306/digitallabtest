@@ -7,15 +7,21 @@ import crab from './img/12.jpg';
 export const SliderData = [
     {
         image: eggs,
-        name: 'egg'
+        name: 'egg',
+        imageDesc : 'Portobello Backed Eggs with Avocado and Bread',
+        price: '8£'
     },
     {
         image: vegetables,
-        name: 'vegetable'
+        name: 'vegetable',
+        imageDesc : 'Baked Avocado Herbs with Bread',
+        price: '8£'
     },
     {
         image: crab,
-        name: 'crab'
+        name: 'crab',
+        imageDesc : 'Summery Salmon, and Spicy Mix',
+        price: '15£'
     },
 ]
 

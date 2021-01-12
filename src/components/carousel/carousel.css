@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  gap: 200px;
+  gap: 100px;
 }
 
 .slider {
@@ -14,8 +14,8 @@
 
 .image {
   display: flex;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50px;
   margin-top: 200px;
   /* padding: 20px; */
@@ -48,4 +48,19 @@
   cursor: pointer;
   z-index: 10;
   user-select: none;
+}
+
+.carousel-text {
+  position: relative;
+  border: black 1px solid;
+  width: 120px;
+  height: 80px;
+  transform: translateY(160px);
+  transform: translateX(80px);
+}
+
+.carousel-desc {
+  position: absolute;
+  font-size: 0.95rem;
+  margin-right: 100px;
 }

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import SliderData from './SliderData';
+//import SliderData from './SliderData';
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa';
 import './carousel.css';
 
@@ -16,18 +16,23 @@ const ImageSlider = ({ slides }) => {
     }
 
     const nextSlide = () => {
-        setCurrent(current === (slides.length) - 1 ? 0 : current + 1);
+        setCurrent(current === (length) - 1 ? 0 : current + 1);
     }
 
     return (
         <section className="slider">
-             <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
+            <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
             <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
-            {SliderData.map((slide, index) => {
+            {slides.map((slide, index) => {
                 return (
                     <div className={index === current ? 'slide active' : 'slide'} key={index}>
                         {/* {index === current && (<img src={slide.image} alt={slide.name} className="image" />)} */}
                         <img src={slide.image} alt={slide.name} className="image" /> 
+                        <div className="carousel-text">
+                            <div className="carousel-desc">{slide.imageDesc}</div>
+                            <div className="carousel-price">{slide.price}</div>
+                            <div className="carousel-basket"></div>
+                        </div>
                     </div>
                 )
             })}
